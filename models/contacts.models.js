@@ -20,9 +20,6 @@ const contactSchema =  mongoose.Schema({
     },
     address: {
         type: String
-    },
-    company: {
-        type: String
     }
 });
 // Pagination
