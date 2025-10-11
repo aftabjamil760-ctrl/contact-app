@@ -13,3 +13,32 @@ Prev & Next buttons hover effect
   color: #fff;
   border-color: #007bff;
 }
+/* Pagination hover */
+.page-item .page-link:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+/* Utilities for table responsiveness */
+.actions-nowrap { 
+  white-space: nowrap;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.break-word {
+  word-break: break-word;
+}
+
+/* Make sticky header stand out over body content */
+.table thead.position-sticky {
+  z-index: 1;
+}
+
+/* Small screen adjustments */
+@media (max-width: 576px) {
+  .card-body { padding: 0.75rem; }
+  .table td, .table th { padding: 0.5rem; font-size: 0.9rem; }
+  .btn { padding: 0.25rem 0.5rem; }
+}
