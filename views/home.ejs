@@ -14,12 +14,12 @@
                     <tr>
                       <th class="text-center" style="width:60px">#</th>
                       <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Email</th>
+                      <th class="d-none d-md-table-cell">Last Name</th>
+                      <th class="d-none d-lg-table-cell">Email</th>
                       <th>Phone</th>
-                      <th>address</th>
-                      <th>Company</th>
-                      <th style="width:150px">Actions</th>
+                      <th class="d-none d-lg-table-cell">address</th>
+                      <th class="d-none d-xl-table-cell">Company</th>
+                      <th class="actions-nowrap" style="width:150px">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -28,12 +28,12 @@
                       <tr>
                         <td class="text-center"><%= srno++ %></td>
                         <td><%= contact.firstName %></td>
-                        <td><%= contact.lastName %></td>
-                        <td><%= contact.email %></td>
-                        <td><%= contact.phone %></td>
-                        <td><%= contact.address %></td>
-                        <td><%= contact.company %></td>
-                        <td>
+                        <td class="d-none d-md-table-cell"><%= contact.lastName %></td>
+                        <td class="d-none d-lg-table-cell"><%= contact.email %></td>
+                        <td class="nowrap"><%= contact.phone %></td>
+                        <td class="d-none d-lg-table-cell break-word"><%= contact.address %></td>
+                        <td class="d-none d-xl-table-cell"><%= contact.company %></td>
+                        <td class="actions-nowrap">
                           <button type="button" class="btn btn-sm btn-info text-white rounded-circle me-1" 
   data-bs-toggle="modal" 
   data-bs-target="#viewModal"
@@ -61,6 +61,7 @@
                     <% }) %>
                   </tbody>
                 </table>
+                
 <!-- // pagination -->
      <nav>
   <ul class="pagination justify-content-center">
